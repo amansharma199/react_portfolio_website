@@ -1,0 +1,46 @@
+.blogs{
+    width: 100%;
+}
+
+.blogsWrapper{
+    padding: 0 100px 30px 100px;
+}
+
+.blogsHeading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blogsHeading h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.blogsHeading p{
+    font-weight: 600;
+    color: rgb(104, 104, 104);
+    margin: 20px;
+}
+
+.blogsCardSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ***********Responsive Code Start ************ */
+
+@media screen and (max-width: 600px) {
+    .blogsWrapper{
+        padding: 0 40px;
+    }
+
+    .blogsCardSection{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}

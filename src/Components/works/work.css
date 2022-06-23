@@ -1,0 +1,56 @@
+.work{
+    width: 100%;
+    scroll-margin-top: 70px;
+}
+
+.workWrapper{
+    padding: 50px 100px;
+}
+
+.workHeading{
+    text-align: center;
+}
+
+.workHeading h1{
+    font-size: 40px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.workHeading p{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(118, 118, 118);
+    margin: 15px;
+} 
+
+.workSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+/* ***********Responsive Code Start ************ */
+
+@media screen and (max-width: 600px) {
+    .work{
+        scroll-margin-top: 50px;
+    }
+    .workWrapper{
+        padding: 50px 40px;
+    }
+
+    .workSection{
+        display: flex;
+        flex-wrap:wrap-reverse;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}

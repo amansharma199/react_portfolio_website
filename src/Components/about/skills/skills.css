@@ -1,0 +1,30 @@
+
+.skill {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    
+}
+
+.skill .skillTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.skill .skillPercentage{
+    margin-top: 5px;
+    height: 20px;
+    background-color:#F44556;
+}
+
+.skill .skillPercentage::before{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 23px;
+    border: 1px solid #F44556;
+
+}

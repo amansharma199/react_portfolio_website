@@ -1,0 +1,139 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+
+}
+
+.navbarWrapper{
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarRight{
+    display: block;
+}
+
+.navbarLeft{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+.navbarLi{
+    display: inline;
+    line-height: 70px;
+    margin-right: 15px;
+    list-style: none;
+    color: white;
+    font-size:15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 5px;
+    transition: ease .5s;
+}
+
+.navbarLi:hover{
+    color: rgb(186, 221, 251);
+}
+
+/* .navbarWrapper .burger{
+    display: none;
+} */
+
+.sticky{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    background-color: #F44556;
+    color: white;
+    transition: 0.3s ease; 
+}
+
+.burgerDiv{
+    display: none;
+}
+
+/************ responsive code **********/
+
+@media (max-width: 680px) { 
+    .navbar{
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .navbarWrapper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .navbarRight{
+        position : absolute;
+        top: 0;
+        right: -100vw;
+        width: 100%;
+        height: 100vh;
+        background-color: #090909;
+        transition: all 0.5s ease;
+        padding: 30px 0 ;
+    }
+
+    .expandNavbar{
+        display: absolute;
+        top:0px;
+        right: 0;
+    }
+
+    .navbarUl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
+    }
+
+    .navbarLi{
+        font-size: 25px;
+    }
+
+    .navbarLi:hover{
+        border-bottom: none;
+        color: #F44556;
+    }
+
+    .burgerDiv{
+        z-index: 10000;
+        display: block;
+    }
+
+    .navbarWrapper .burger{
+        display: block;
+        cursor: pointer;
+        font-size: 35px;
+        color: white;
+        z-index: 10000;
+    }
+    
+    .sticky{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top:0;
+        z-index: 999;
+        background-color: #F44556;
+        color: white;
+        transition: 0.3s ease; 
+    }
+
+ }

@@ -1,0 +1,142 @@
+.contact{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #EFF5F9;
+    scroll-margin-top: 70px;
+}
+
+.contactWrapper{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHeading{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+.contactForm{
+    width: 70%;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactFormLeft{
+    flex: 1;
+}
+
+.contactFormLeft img{
+    width: 250px;
+    height: 250px;
+}
+
+.contactFormRight{
+    flex: 1;
+}
+
+.contactFormRight form{
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormRight form input{
+    margin-bottom: 10px;
+    padding:12px 15px ;
+    font-size: 14px;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0 0 5px -3px rgb(66, 66, 66);
+}
+
+.contactFormRight form textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding:12px 15px ;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px -3px rgb(66, 66, 66);
+    resize: none;
+}
+
+.contactFormRight form input, textarea:focus{
+    outline: none;
+}
+
+.contactFormRight form button{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0 0 5px -3px rgb(66, 66, 66);
+    background-color: #F44556;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ***********Responsive Code Start ************* */
+
+@media screen and (max-width: 600px) {
+
+    .contact{
+        height: auto;
+        scroll-margin-top: 50px;
+    }
+
+    .contactWrapper{
+        padding: 20px 40px;
+    }
+
+    .contactHeading{
+        width: 100%; 
+        font-size: 35px;
+    }
+
+    .contactForm{
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .contactFormLeft img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+    }
+
+    .contactFormRight{
+        flex: 1;
+        width: 100%;
+    }
+
+    .contactFormRight form input{
+        width: 100%;
+        margin-bottom: 15px;
+        padding:12px 15px ;
+        font-size: 15px;
+    }
+
+    .contactFormRight form button{
+        margin: 10px 0;
+    }
+    
+
+}
